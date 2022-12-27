@@ -11,7 +11,6 @@ module.exports = {
           '~modules': './src/modules',
           '~configs': './src/configs',
           '~shared': './src/shared',
-          '~errors': './src/errors',
           '~utils': './src/utils',
         },
       },
