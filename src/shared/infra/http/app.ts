@@ -1,13 +1,13 @@
+import 'express-async-errors';
 import 'reflect-metadata';
-import 'dotenv/config';
 import cors from 'cors';
 import express from 'express';
-import 'express-async-errors';
+
+import '~shared/container';
 
 import { appError } from './middlewares/appError';
 import rateLimiter from './middlewares/rateLimiter';
-import { router } from './routes';
-import '~/shared/container';
+import { routes } from './routes';
 
 const app = express();
 
@@ -16,7 +16,7 @@ app.use(rateLimiter);
 app.use(express.json());
 
 app.use(cors());
-app.use(router);
+app.use(routes);
 
 app.use(appError);
 
