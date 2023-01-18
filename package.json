@@ -7,7 +7,7 @@
     "start": "node dist/shared/infra/http/server.js",
     "build": "tsup src",
     "dev": "tsx watch src/shared/infra/http/server.ts",
-    "test": "jest",
+    "test": "vitest",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -22,12 +22,12 @@
     "redis": "^3.1.2",
     "reflect-metadata": "^0.1.13",
     "tsyringe": "^4.6.0",
+    "vitest": "^0.27.2",
     "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
-    "@types/jest": "^27.0.2",
     "@types/redis": "^2.8.32",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
     "@typescript-eslint/parser": "^5.47.1",
@@ -40,12 +40,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "git-commit-msg-linter": "^4.5.0",
     "husky": "^8.0.2",
-    "jest": "^27.3.1",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
-    "ts-jest": "^27.0.7",
-    "ts-node-dev": "^1.1.8",
-    "tsconfig-paths": "^3.11.0",
     "tsup": "^6.5.0",
     "tsx": "^3.12.2",
     "typescript": "*"
